@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector02</title>
+    <style>
+        /* 방문한적 없는것 */
+        a:link{
+            color: red;
+        }
+
+        /* 방문한적 있을때 */
+        a:visited{
+            color: black;
+        }
+
+        /* 마우스를 올렸을 때 */
+        a:hover{
+            color: yellow;
+            font-size: 20px;
+        }
+
+        a:first-child{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        a:last-child{
+         font-size: 80px; 
+        }
+
+        /* 특정 선택  */
+        a:nth-child(3){
+            font-size: 60px;
+            background-color: bisque;
+        }
+
+        a:not(a:nth-child(2)){
+            color: green;
+        }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <a href="selector01.html" target="_blank">링크1</a>
+        <a href="aa">링크2</a>
+        <a href="">링크3</a>
+        <a href="">링크4</a>
+        <a href="">링크5</a>
+      </div>
+    </main>
+  </body>
+</html>
